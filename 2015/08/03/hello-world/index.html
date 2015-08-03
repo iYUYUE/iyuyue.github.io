@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -54,8 +54,8 @@ Quick">
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
-    sidebar: 'post'
+    scheme: 'Mist',
+    sidebar: 'hide'
   };
 </script>
 
@@ -133,13 +133,6 @@ Quick">
 
       
       
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            Search
-          </a>
-        </li>
-      
     </ul>
   
 
@@ -182,6 +175,13 @@ Quick">
         
 
         
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/08/03/hello-world/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/08/03/hello-world/" itemprop="commentsCount"></span>
+            </a>
+          </span>
           
         
       </div>
@@ -229,6 +229,10 @@ Quick">
 
         
           <div class="comments" id="comments">
+            
+              <div id="disqus_thread">
+                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
             
           </div>
         
@@ -340,7 +344,7 @@ Quick">
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
@@ -359,6 +363,27 @@ Quick">
     
     
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'iyuyue';
+      var disqus_identifier = '2015/08/03/hello-world/';
+      var disqus_title = 'Hello World';
+      var disqus_url = 'http://iYUYUE.github.io/2015/08/03/hello-world/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
   
 
 

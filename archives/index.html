@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -50,8 +50,8 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
-    sidebar: 'post'
+    scheme: 'Mist',
+    sidebar: 'hide'
   };
 </script>
 
@@ -128,13 +128,6 @@
       
 
       
-      
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            Search
-          </a>
-        </li>
       
     </ul>
   
@@ -296,7 +289,7 @@
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
@@ -321,6 +314,25 @@
     
     
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'iyuyue';
+      var disqus_identifier = 'archives/index.html';
+      var disqus_title = '';
+      var disqus_url = '';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+    </script>
   
 
 
