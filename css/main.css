@@ -1055,7 +1055,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1bde4f;
+  background: #e5ff59;
 }
 .sidebar-nav {
   margin: 0;
@@ -2193,5 +2193,5 @@ ul li {
   margin: 0;
 }
 .st-ui-stamp {
-  display: none;
+  display: none !important;
 }
