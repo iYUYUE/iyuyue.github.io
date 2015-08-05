@@ -430,12 +430,12 @@ Quick">
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" target="_blank" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="powered-by">
   Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+  <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
 </div>
@@ -499,7 +499,9 @@ Quick">
 
 
 
-  <script type="text/javascript" src="/js/nav-toggle.js"></script>
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
   
@@ -666,6 +668,9 @@ Quick">
     $(document).ready(function () {
       if (CONFIG.sidebar === 'always') {
         displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
       }
     });
   </script>
