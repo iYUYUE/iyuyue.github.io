@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[Mathjax Test]]></title>
+      <url>%2F2015%2F08%2F04%2FMathjax-Test%2F</url>
+      <content type="text"><![CDATA[Schrödinger equation $$ i\hbar\frac{\partial \psi}{\partial t}= \frac{-\hbar^2}{2m} \left(\frac{\partial^2}{\partial x^2}+ \frac{\partial^2}{\partial y^2}+ \frac{\partial^2}{\partial z^2}\right) \psi + V \psi.$$Hessian matrix (Hessian)$$ H = \begin{bmatrix} \dfrac{\partial^2 f}{\partial x_1^2} &amp; \dfrac{\partial^2 f}{\partial x_1\,\partial x_2} &amp; \cdots &amp; \dfrac{\partial^2 f}{\partial x_1\,\partial x_n} \[2.2ex] \dfrac{\partial^2 f}{\partial x_2\,\partial x_1} &amp; \dfrac{\partial^2 f}{\partial x_2^2} &amp; \cdots &amp; \dfrac{\partial^2 f}{\partial x_2\,\partial x_n} \[2.2ex] \vdots &amp; \vdots &amp; \ddots &amp; \vdots \[2.2ex] \dfrac{\partial^2 f}{\partial x_n\,\partial x_1} &amp; \dfrac{\partial^2 f}{\partial x_n\,\partial x_2} &amp; \cdots &amp; \dfrac{\partial^2 f}{\partial x_n^2}\end{bmatrix} $$]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2015%2F08%2F03%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[[Archived] XJTLU Campus Printer Setup Guide]]></title>
+      <url>%2F2012%2F09%2F04%2FArchived-XJTLU-Campus-Printer-Setup-Guide%2F</url>
+      <content type="text"><![CDATA[This a guide for using printing service in XJTLU campus on your own Windows &amp; MAC. Download Just enjoy it.]]></content>
+    </entry>
+
+    
+  
+  
+</search>
