@@ -1,11 +1,16 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<html class="theme-next mist use-motion" lang="default">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -20,16 +25,28 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
 
 
 
-  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 
 
+
+
+
+
+
+  
+
+<link href="//cdn.jsdelivr.net/fontawesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="iYUYUE,FishMoon,Machine Learning" />
@@ -38,7 +55,14 @@
 
 
 
+
+
+
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+
+
 
 
 <meta name="description">
@@ -52,33 +76,50 @@
 <meta name="twitter:description">
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Mist',
-    sidebar: 'hide'
+    sidebar: "hide",
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: "",
+      labels: ""
+    }
   };
 </script>
+
+
+
+
+
+
 
   <title> Archive | FishMoon's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
+
+
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-9834908-8', 'auto');
   ga('send', 'pageview');
 </script>
@@ -86,39 +127,55 @@
 
 
 
-  <div class="container one-column  page-archive ">
+
+
+
+
+
+
+
+  
+  
+
+  <div class="container   page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">FishMoon's Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">FishMoon's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Just enjoy the show.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            
             Home
           </a>
         </li>
@@ -126,7 +183,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            
             Archives
           </a>
         </li>
@@ -134,13 +191,12 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
+            
             Tags
           </a>
         </li>
       
 
-      
       
     </ul>
   
@@ -148,12 +204,16 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <section id="posts" class="posts-collapse">
     <span class="archive-move-on"></span>
@@ -183,19 +243,25 @@
 
       
 
-  <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h1 class="post-title">
         
             <a class="post-title-link" href="/2015/08/04/Mathjax-Test/" itemprop="url">
-              <span itemprop="name">Mathjax Test</span>
+              
+                <span itemprop="name">Mathjax Test</span>
+              
             </a>
         
       </h1>
 
       <div class="post-meta">
-        <time class="post-time" datetime="2015-08-04T10:19:51.000Z" itemprop="dateCreated" content="2015-08-04"> 08-04 </time>
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-08-04T18:19:51+08:00"
+              content="2015-08-04" >
+          08-04
+        </time>
       </div>
 
     </header>
@@ -214,19 +280,25 @@
 
       
 
-  <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h1 class="post-title">
         
             <a class="post-title-link" href="/2015/08/03/hello-world/" itemprop="url">
-              <span itemprop="name">Hello World</span>
+              
+                <span itemprop="name">Hello World</span>
+              
             </a>
         
       </h1>
 
       <div class="post-meta">
-        <time class="post-time" datetime="2015-08-03T04:45:05.000Z" itemprop="dateCreated" content="2015-08-03"> 08-03 </time>
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-08-03T12:45:05+08:00"
+              content="2015-08-03" >
+          08-03
+        </time>
       </div>
 
     </header>
@@ -240,14 +312,17 @@
 
   
 
- </div>
 
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-
-        
-      </div>
-
-      
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -262,33 +337,41 @@
 
       
 
-      <section class="site-overview">
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="//cdn.iyuyue.net/img/blog/avatar.png" alt="iYUYUE" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="//cdn.iyuyue.net/img/blog/avatar.png"
+               alt="iYUYUE" />
           <p class="site-author-name" itemprop="name">iYUYUE</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
 
-          <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">categories</span>
-              
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">tags</span>
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">posts</span>
               </a>
-          </div>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
 
         </nav>
 
@@ -298,15 +381,24 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/iYUYUE" target="_blank">GitHub</a>
+                <a href="https://github.com/iYUYUE" target="_blank" title="GitHub">
+                  
+                  GitHub
+                </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/iyuyue66" target="_blank">Twitter</a>
+                <a href="https://twitter.com/iyuyue66" target="_blank" title="Twitter">
+                  
+                  Twitter
+                </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://www.v2ex.com/member/iyuyue" target="_blank">V2EX</a>
+                <a href="https://www.v2ex.com/member/iyuyue" target="_blank" title="V2EX">
+                  
+                  V2EX
+                </a>
               </span>
             
           
@@ -315,36 +407,47 @@
         
         
           <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
               <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
             </a>
           </div>
         
 
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">Links</p>
-            
-              <span class="links-of-author-item">
-              <a href="https://ip.tl/" target="_blank">IP.TL</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://blog.ileodo.com/" target="_blank">iLeoDo</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://bbstripe.me/" target="_blank">Alan Yuan</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="https://air20.com/" target="_blank">AIR20</a>
-              </span>
-            
-          
-        </div>
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://ip.tl/" title="IP.TL" target="_blank">IP.TL</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.ileodo.com/" title="iLeoDo" target="_blank">iLeoDo</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://bbstripe.me/" title="Alan Yuan" target="_blank">Alan Yuan</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://air20.com/" title="AIR20" target="_blank">AIR20</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
 
       </section>
+
+      
 
       
 
@@ -352,96 +455,90 @@
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  &copy; &nbsp;  2009 - 
+  &copy;  2009 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">iYUYUE</span>
 </div>
 
-<div class="powered-by">
-  Powered by <a class="theme-link" target="_blank" href="http://hexo.io" rel="nofollow">Hexo</a>
-</div>
-
-<div class="powered-by">
-  Theme -
-  <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next" rel="nofollow">
-    NexT.Mist
-  </a>
-</div>
-
-<div class="theme-info">
-   <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">苏ICP备15004451号</a>
-</div>
 
 
- </div>
+        
+
+        
+      </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  
-  
-    <script type="text/javascript">
-      postMotionOptions = {stagger: 100, drag: true};
-    </script>
   
 
-  
-    
-    
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
-  
 
-    <script type="text/javascript">
-      var disqus_shortname = 'iyuyue';
-      var disqus_identifier = 'archives/2015/index.html';
-      var disqus_title = '';
-      var disqus_url = '';
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
 
-      run_disqus_script('count.js');
-      
-    </script>
+
+
+
+
+
   
 
 
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.4.5.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.4.5.1"></script>
+
+
+
   
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
-  
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
-
-
-
-
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
   
@@ -451,52 +548,66 @@
   
 
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.4.5.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'iyuyue';
+      var disqus_identifier = 'archives/2015/index.html';
+
+      var disqus_title = "";
+
+
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
 
+      run_disqus_script('count.js');
+
+      
+
+    </script>
   
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-  });
-</script>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for (i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+
+
+
 
 
   
+
+
+
+
+
   
 
   
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
+
+  
+
+  
+
 </body>
 </html>
